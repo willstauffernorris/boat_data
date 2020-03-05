@@ -16,9 +16,12 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            ## What kind of product will people buy?
+            # How much money will we make?
 
-            This web app makes it easy to predict the types of products that different customers will purchase.
+            This web app makes it easy to see which factors are important in predicting a company's revenue.
+            
+            
+    
 
             """
         ),
