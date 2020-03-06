@@ -16,7 +16,7 @@ column1 = dbc.Col(
         dcc.Markdown(
             """
         
-            # How much money will we make?
+            # How much money will we make selling boats?
 
             This web app makes it easy to see which factors are important in predicting a company's revenue.
             
@@ -36,7 +36,10 @@ fig = px.scatter(gapminder.query("year==2007"), x="gdpPercap", y="lifeExp", size
 
 column2 = dbc.Col(
     [
-        dcc.Graph(figure=fig),
+        #dcc.Graph(figure=fig),
+        html.Img(src='assets/boat.jpg', 
+        className='img-fluid'
+        )
     ]
 )
 
