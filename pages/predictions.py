@@ -28,7 +28,8 @@ column1 = dbc.Col(
         ), 
 
          
-        dcc.Markdown('#### Page Depth'), 
+        dcc.Markdown('#### Page Depth'),
+        dcc.Markdown('##### This is how many unique pages a user has visited.'),
         dcc.Slider(
             id='Page Depth', 
             min=1, 
@@ -41,7 +42,7 @@ column1 = dbc.Col(
 
         
         dcc.Markdown('#### Session Duration'), 
-        dcc.Markdown('##### In Seconds'), 
+        dcc.Markdown('##### How long a user stays on the website (in seconds).'), 
         dcc.Slider(
             id='Session Duration', 
             min=1, 
@@ -53,13 +54,16 @@ column1 = dbc.Col(
         ), 
         
     ],
-    md=4,
+    md=7,
 )
 
 column2 = dbc.Col(
     [
         html.H2('Expected Revenue', className='mb-5'), 
         html.Div(id='prediction-content', className='lead')
+
+        #html.Img(src='assets/boat2.jpg', 
+        #className='img-fluid')
     ]
 )
 
